@@ -11,7 +11,7 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 keywords = ['symmetry', 'molecules', 'chemistry']
-requires-python = ">=3.9"
+requires-python = ">=3.11"
 
 [project.urls]
 Homepage = "https://github.com/corinwagen/pymsym"
@@ -27,7 +27,7 @@ requires = ["scikit-build-core"]
 build-backend = "scikit_build_core.build"
 
 [tool.cibuildwheel]
-# Disable building PyPy wheels on all platforms
-#build = "cp311*"
+# Build CPython 3.11–3.14 only; skip PyPy and unsupported CPython versions.
+build = "cp311-* cp312-* cp313-* cp314-*"
 skip = "pp*"
 
