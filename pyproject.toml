@@ -1,6 +1,6 @@
 [project]
 name = "pymsym"
-version = "0.3.4"
+version = "0.3.5"
 description = "libmsym python binding"
 authors = [{name = "Corin Wagen", email = "corinwagen@gmail.com"}]
 license = {file = "LICENSE"}
