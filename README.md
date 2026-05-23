@@ -36,7 +36,7 @@ positions = [
  ]
 
 pymsym.get_point_group(atomic_numbers, positions) # returns C2v
-print(pymsym.get_symmetry_number(atomic_numbers, positions) # returns 2
+print(pymsym.get_symmetry_number(atomic_numbers, positions)) # returns 2
 ```
 
 the original lower-level classes from libmsym can also be accessed (``pymsym.Element``, etc). 
